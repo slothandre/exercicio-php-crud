@@ -57,8 +57,8 @@
                         <td><?=$aluno["nota2"]?></td>
                         <td><?=$aluno["media"]?></td>
                         <td><?=$situacao?></td>
-                        <td><a class="btn btn-primary" href="atualizar.php?id=<?=$aluno["id"]?>"><i class="bi bi-pencil"></i> Editar</a></td>
-                        <td><a class="excluir btn btn-primary" href="excluir.php?id=<?=$aluno["id"]?>"><i class="bi bi-trash"></i> Excluir</a></td>
+                        <td class="text-center"><a class="btn btn-primary" href="atualizar.php?id=<?=$aluno["id"]?>"><i class="bi bi-pencil"></i> Editar</a></td>
+                        <td class="text-center"><a class="excluir btn btn-primary" href="excluir.php?id=<?=$aluno["id"]?>"><i class="bi bi-trash"></i> Excluir</a></td>
                     </tr>
                 <?php } ?>
             </tbody>
