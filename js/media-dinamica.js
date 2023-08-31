@@ -3,7 +3,7 @@ const nota2 = document.querySelector("#segunda");
 const inputMedia = document.querySelector("#media");
 const inputSituacao = document.querySelector("#situacao");
 
-function dinamicoNotaSituacao(){
+function notaSituacaoDinamica(){
     let media = ((parseFloat(nota1.value) + parseFloat(nota2.value)) / 2);
     inputMedia.value = media.toFixed(2);
 
@@ -16,5 +16,5 @@ function dinamicoNotaSituacao(){
     } 
 };
 
-nota1.addEventListener("input", dinamicoNotaSituacao);
-nota2.addEventListener("input", dinamicoNotaSituacao);
+nota1.addEventListener("input", notaSituacaoDinamica);
+nota2.addEventListener("input", notaSituacaoDinamica);
