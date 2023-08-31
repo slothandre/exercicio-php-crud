@@ -26,16 +26,22 @@
 		<p>Utilize o formulário abaixo para cadastrar um novo aluno.</p>
 	
 		<form action="#" method="post">
-			<p><label for="nome">Nome:</label>
-			<input type="text" id="nome" name="nome" required></p>
+			<p class="form-floating">
+				<input class="form-control" type="text" id="nome" name="nome" placeholder="" required>
+				<label for="nome">Nome:</label>
+			</p>
 			
-		  <p><label for="primeira">Primeira nota:</label>
-			<input type="number" id="primeira" name="primeira" step="0.01" min="0.00" max="10.00" required></p>
+			<p class="form-floating">
+				<input class="form-control" type="number" id="primeira" name="primeira" step="0.01" min="0.00" max="10.00" placeholder="" required>
+				<label for="primeira">Primeira nota:</label>
+			</p>
 			
-			<p><label for="segunda">Segunda nota:</label>
-			<input type="number" id="segunda" name="segunda" step="0.01" min="0.00" max="10.00" required></p>
+			<p class="form-floating">
+				<input class="form-control" type="number" id="segunda" name="segunda" step="0.01" min="0.00" max="10.00" placeholder="" required>
+				<label for="segunda">Segunda nota:</label>
+			</p>
 			
-			<button type="submit" name="submit">Cadastrar aluno</button>
+			<button class="btn btn-primary" type="submit" name="submit">Cadastrar aluno</button>
 		</form>
 	
 		<hr>

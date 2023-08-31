@@ -14,9 +14,9 @@
     <main class="container">
         <h2>Gerenciamento de alunos, notas, médias e aprovação/reprovação</h2>
         <hr>
-        <ul>
-            <li><a href="visualizar.php">Visualizar Alunos</a></li>
-            <li><a href="inserir.php">Inserir novo aluno</a></li>
+        <ul class="nav nav-underline">
+            <li class="nav-item"><a class="nav-link" href="visualizar.php">Visualizar Alunos</a></li>
+            <li class="nav-item"><a class="nav-link" href="inserir.php">Inserir novo aluno</a></li>
         </ul>
     </main>
 </body>
