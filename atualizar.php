@@ -46,7 +46,7 @@
             <p class="form-floating">
             <!-- Campo somente leitura e desabilitado para edição.
             Usado apenas para exibição do valor da média -->
-                <input class="form-control" value="<?=$aluno["media"]?>" name="media" type="number" id="media" step="0.01" min="0.00" max="10.00" readonly disabled>
+                <input class="form-control" value="<?=$aluno["media"]?>" id="media" name="media" type="number" step="0.01" min="0.00" max="10.00" readonly disabled>
                 <label for="media">Média:</label>
             </p>
             <p class="form-floating">
@@ -61,7 +61,7 @@
                     $situacao = "Reprovado";
                 } 
             ?>
-                <input class="form-control" value="<?=$situacao?>" type="text" name="situacao" id="situacao" readonly disabled>
+                <input class="form-control" value="<?=$situacao?>" type="text" id="situacao" name="situacao" readonly disabled>
                 <label for="situacao">Situação:</label>
             </p>
             <button class="btn btn-primary" name="atualizar-dados">Atualizar dados do aluno</button>
@@ -70,7 +70,7 @@
         <hr>
         <p><a class="btn btn-primary" href="visualizar.php">Voltar à lista de alunos</a></p>
     </main>
-
+    <script src="js/media-dinamica.js"></script>
 
 </body>
 </html>

@@ -67,6 +67,6 @@
     
         <p><a href="index.php" class="btn btn-primary">Voltar ao início</a></p>
     </main>
-    <script src="js/confirma-excluir.js"></script>
+    <script src="js/confirma-exclusao.js"></script>
 </body>
 </html>
