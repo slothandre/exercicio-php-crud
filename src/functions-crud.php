@@ -20,9 +20,7 @@
     };
 
     function visualizarAlunos(PDO $conection):array{
-        $sql = "SELECT
-            id, nome, nota1, nota2,
-            CAST(((nota1 + nota2) / 2) AS DEC(4,2)) AS media
+        $sql = "SELECT *, CAST(((nota1 + nota2) / 2) AS DEC(4,2)) AS media
             FROM alunos ORDER BY nome";
 
         try {
@@ -36,9 +34,7 @@
     };
 
     function visualizarUmAluno(PDO $conection, int $id):array{
-        $sql = "SELECT
-            id, nome, nota1, nota2,
-            CAST(((nota1 + nota2) / 2) AS DEC(4,2)) AS media
+        $sql = "SELECT *, CAST(((nota1 + nota2) / 2) AS DEC(4,2)) AS media
             FROM alunos WHERE id = :id ORDER BY nome";
 
         try {

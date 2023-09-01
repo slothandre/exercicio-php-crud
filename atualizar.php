@@ -46,22 +46,25 @@
             <p class="form-floating">
             <!-- Campo somente leitura e desabilitado para edição.
             Usado apenas para exibição do valor da média -->
-                <input class="form-control" value="<?=$aluno["media"]?>" id="media" name="media" type="number" step="0.01" min="0.00" max="10.00" readonly disabled>
+            <?php
+                if($aluno["media"] >= 7){
+                    $situacao = "Aprovado";
+                    $class = "text-bg-success";
+                } elseif($aluno["media"] >= 5){
+                    $situacao = "Recuperação";
+                    $class = "text-bg-warning";
+                } else {
+                    $situacao = "Reprovado";
+                    $class = "text-bg-danger";
+                } 
+            ?>
+                <input class="form-control <?=$class?>" value="<?=$aluno["media"]?>" id="media" name="media" type="number" step="0.01" min="0.00" max="10.00" readonly disabled>
                 <label for="media">Média:</label>
             </p>
             <p class="form-floating">
             <!-- Campo somente leitura e desabilitado para edição
             Usado apenas para exibição do texto da situação -->
-            <?php
-                if($aluno["media"] >= 7){
-                    $situacao = "Aprovado";
-                } elseif($aluno["media"] >= 5){
-                    $situacao = "Recuperação";
-                } else {
-                    $situacao = "Reprovado";
-                } 
-            ?>
-                <input class="form-control" value="<?=$situacao?>" type="text" id="situacao" name="situacao" readonly disabled>
+                <input class="form-control <?=$class?>" value="<?=$situacao?>" type="text" id="situacao" name="situacao" readonly disabled>
                 <label for="situacao">Situação:</label>
             </p>
             <button class="btn btn-primary" name="atualizar-dados">Atualizar dados do aluno</button>
