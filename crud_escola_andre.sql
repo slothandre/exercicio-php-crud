@@ -3,9 +3,9 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Tempo de geração: 31-Ago-2023 às 16:57
+-- Tempo de geração: 01/09/2023 às 06:07
 -- Versão do servidor: 10.4.28-MariaDB
--- versão do PHP: 8.2.4
+-- Versão do PHP: 8.2.4
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 START TRANSACTION;
@@ -26,7 +26,7 @@ USE `crud_escola_andre`;
 -- --------------------------------------------------------
 
 --
--- Estrutura da tabela `alunos`
+-- Estrutura para tabela `alunos`
 --
 
 CREATE TABLE `alunos` (
@@ -37,31 +37,34 @@ CREATE TABLE `alunos` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
 --
--- Extraindo dados da tabela `alunos`
+-- Despejando dados para a tabela `alunos`
 --
 
 INSERT INTO `alunos` (`id`, `nome`, `nota1`, `nota2`) VALUES
-(1, 'André', 9.00, 8.00);
+(2, 'Tiuliel', 9.60, 7.80),
+(3, 'Pelipe', 5.00, 6.70),
+(4, 'Bueno', 3.20, 1.70),
+(5, 'André', 8.00, 9.00);
 
 --
 -- Índices para tabelas despejadas
 --
 
 --
--- Índices para tabela `alunos`
+-- Índices de tabela `alunos`
 --
 ALTER TABLE `alunos`
   ADD PRIMARY KEY (`id`);
 
 --
--- AUTO_INCREMENT de tabelas despejadas
+-- AUTO_INCREMENT para tabelas despejadas
 --
 
 --
 -- AUTO_INCREMENT de tabela `alunos`
 --
 ALTER TABLE `alunos`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=6;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
